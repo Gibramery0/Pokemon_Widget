@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026DEC862D817A1F00E4AFF3 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026DEC852D817A1F00E4AFF3 /* Pokemon.swift */; };
+		026DEC8B2D817DC100E4AFF3 /* OzelGorselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026DEC8A2D817DC100E4AFF3 /* OzelGorselView.swift */; };
+		026DEC8D2D817F9A00E4AFF3 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026DEC8C2D817F9A00E4AFF3 /* PokemonView.swift */; };
 		02896F2D2D7F0D94009340B8 /* PokemonWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02896F2C2D7F0D94009340B8 /* PokemonWidgetApp.swift */; };
 		02896F2F2D7F0D94009340B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02896F2E2D7F0D94009340B8 /* ContentView.swift */; };
 		02896F312D7F0DF7009340B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02896F302D7F0DF7009340B8 /* Assets.xcassets */; };
@@ -14,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026DEC852D817A1F00E4AFF3 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		026DEC8A2D817DC100E4AFF3 /* OzelGorselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzelGorselView.swift; sourceTree = "<group>"; };
+		026DEC8C2D817F9A00E4AFF3 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
+		026DEC8E2D8184C500E4AFF3 /* PokemonWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PokemonWidget.entitlements; sourceTree = "<group>"; };
 		02896F292D7F0D94009340B8 /* PokemonWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02896F2C2D7F0D94009340B8 /* PokemonWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonWidgetApp.swift; sourceTree = "<group>"; };
 		02896F2E2D7F0D94009340B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +40,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026DEC872D817D8C00E4AFF3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				02896F2C2D7F0D94009340B8 /* PokemonWidgetApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		026DEC882D817D9400E4AFF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				026DEC852D817A1F00E4AFF3 /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		026DEC892D817DA000E4AFF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02896F2E2D7F0D94009340B8 /* ContentView.swift */,
+				026DEC8A2D817DC100E4AFF3 /* OzelGorselView.swift */,
+				026DEC8C2D817F9A00E4AFF3 /* PokemonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		02896F202D7F0D94009340B8 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +85,10 @@
 		02896F2B2D7F0D94009340B8 /* PokemonWidget */ = {
 			isa = PBXGroup;
 			children = (
-				02896F2C2D7F0D94009340B8 /* PokemonWidgetApp.swift */,
-				02896F2E2D7F0D94009340B8 /* ContentView.swift */,
+				026DEC8E2D8184C500E4AFF3 /* PokemonWidget.entitlements */,
+				026DEC892D817DA000E4AFF3 /* View */,
+				026DEC882D817D9400E4AFF3 /* Model */,
+				026DEC872D817D8C00E4AFF3 /* App */,
 				02896F302D7F0DF7009340B8 /* Assets.xcassets */,
 				02896F352D7F0DF7009340B8 /* Info.plist */,
 				02896F322D7F0DF7009340B8 /* Preview Content */,
@@ -138,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026DEC8B2D817DC100E4AFF3 /* OzelGorselView.swift in Sources */,
 				02896F2F2D7F0D94009340B8 /* ContentView.swift in Sources */,
 				02896F2D2D7F0D94009340B8 /* PokemonWidgetApp.swift in Sources */,
+				026DEC8D2D817F9A00E4AFF3 /* PokemonView.swift in Sources */,
+				026DEC862D817A1F00E4AFF3 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PokemonWidget/PokemonWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 577D53Y2A3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PokemonWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -288,8 +328,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PokemonWidget/PokemonWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 577D53Y2A3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PokemonWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
